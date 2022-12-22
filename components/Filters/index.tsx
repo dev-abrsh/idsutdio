@@ -17,8 +17,8 @@ const projectDevelopers = [
 
 export default () => {
   return (
-    <div className="hidden lg:block">
-      <h5>Filter</h5>
+    <div className="mr-10 hidden lg:block">
+      <h5 className="mb-4 font-semibold text-black-100 md:text-2xl">Filter</h5>
       <div>
         <Filter title="Project Name" options={projectNames} />
         <Filter title="Project Developer" options={projectDevelopers} />

@@ -5,7 +5,7 @@ import BuildingInfo from './BuildingInfo'
 
 const rooms = [
   {
-    id: Date.now(),
+    id: 1,
     name: '3BR',
     type: '7 types',
     height: '1,500 - 1,650 sqft',
@@ -14,7 +14,7 @@ const rooms = [
     premium: false,
   },
   {
-    id: Date.now(),
+    id: 2,
     name: '3BR Premium',
     price: '$1.258M - $1.398M',
     type: '3PS1-PH',
@@ -23,7 +23,7 @@ const rooms = [
     premium: true,
   },
   {
-    id: Date.now(),
+    id: 3,
     name: '3BR Premium + Study',
     price: '$1.258M - $1.398M',
     type: '7 types',

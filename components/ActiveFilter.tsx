@@ -6,17 +6,25 @@ export default function ActiveFilter() {
       <Chip text="4 Stars" />
       <Chip text="5 Stars" />
       <Chip text="Air conditioning" />
-      <Chip text="Prime Distrint" />
-      <Chip text="D9 - Orchard/River Vallet" />
-      <Chip text="D10 - Tanglin/Holland/Bukit Timah" />
+      <Chip text="Prime Distrint" className="hidden sm:flex" />
+      <Chip text="D9 - Orchard/River Vallet" className="hidden sm:flex" />
+      <Chip
+        text="D10 - Tanglin/Holland/Bukit Timah"
+        className="hidden sm:flex"
+      />
       <ClearAllFilter />
     </div>
   )
 }
 
-function Chip({ text }: { text: string }) {
+function Chip({ text, className }: { text: string; className?: any }) {
   return (
-    <button className="flex items-center gap-1 rounded-2xl border border-primary-3 bg-primary-3/[15%] px-2 py-1 text-sm font-normal text-primary-2">
+    <button
+      className={
+        'flex items-center gap-1 rounded-2xl border border-primary-3 bg-primary-3/[15%] px-2 py-1 text-sm font-normal text-primary-2 ' +
+        className
+      }
+    >
       <span className="whitespace-nowrap">{text}</span>
       <CloseCircleIcon />
     </button>
